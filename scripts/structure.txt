@@ -1,0 +1,113 @@
+📂 SyncSchwab/
+==================================================
+├── 📁 .streamlit/
+│   └── 📋 config.toml
+├── 📁 app/
+│   ├── ⚛️ core/
+│   │   ├── 🐍 cache_manager.py
+│   │   ├── 🐍 config.py
+│   │   ├── 🐍 error_handler.py
+│   │   ├── 🐍 json_utils.py
+│   │   ├── 🐍 logger.py
+│   │   ├── 🐍 market_calendar.py
+│   │   ├── 🐍 notification_service.py
+│   │   ├── 🐍 paths.py
+│   │   ├── 🐍 scheduler.py
+│   │   ├── 🐍 sync_service.py
+│   │   └── 🐍 token_checker.py
+│   ├── 🖥️ gui/
+│   │   ├── 🧩 components/
+│   │   │   ├── 🐍 __init__.py
+│   │   │   ├── 🐍 client_details.py
+│   │   │   ├── 🐍 client_management.py
+│   │   │   ├── 🐍 dashboard.py
+│   │   │   ├── 🐍 log_viewer.py
+│   │   │   ├── 🐍 main_account.py
+│   │   │   ├── 🐍 modals.py
+│   │   │   ├── 🐍 notifications.py
+│   │   │   ├── 🐍 oauth_wizard.py
+│   │   │   ├── 🐍 sidebar.py
+│   │   │   └── 🐍 synchronization.py
+│   │   ├── 🔧 utils/
+│   │   │   ├── 🐍 __init__.py
+│   │   │   ├── 🐍 env_manager.py
+│   │   │   ├── 🐍 refresh_manager.py
+│   │   │   ├── 🐍 session_state.py
+│   │   │   ├── 🐍 styles.py
+│   │   │   └── 🐍 styles_directory.py
+│   │   ├── 🐍 __init__.py
+│   │   └── 🐍 main.py
+│   ├── 🧠 models/
+│   │   ├── 📁 clients/
+│   │   │   └── 🐍 client_manager.py
+│   │   └── 📁 copier/
+│   │       ├── 🐍 calculator.py
+│   │       ├── 🐍 entities.py
+│   │       ├── 🐍 multi_sync.py
+│   │       ├── 🐍 synchronizer.py
+│   │       └── 🐍 validator.py
+│   └── 🔧 utils/
+│       ├── 🐍 __init__.py
+│       └── 🐍 schwab_auth.py
+├── ⚙️ config/
+│   ├── 📄 .gitkeep
+│   ├── 📋 clients.json
+│   ├── 📋 general_settings.json
+│   ├── 📋 market_calendar.json
+│   ├── 📋 sync_settings.json
+│   └── 📋 ui_state.json
+├── 💾 data/
+│   ├── 📁 clients/
+│   │   ├── 📄 .gitkeep
+│   │   └── 📋 slave_1_history_dry.json
+│   ├── 📄 .gitkeep
+│   └── 📋 account_cache.json
+├── 📜 logs/
+│   ├── 📄 .gitkeep
+│   ├── 📜 errors.log
+│   ├── 📦 schwab_client.2025-12-01_00-20-20_710565.log.zip
+│   ├── 📦 schwab_client.2025-12-08_14-52-43_502276.log.zip
+│   ├── 📦 schwab_client.2025-12-15_15-07-50_582581.log.zip
+│   └── 📜 schwab_client.log
+├── 📁 Recycle/
+│   └── 📄 .gitkeep
+├── 📜 scripts/
+│   ├── 🐍 count_lines.py
+│   ├── 🐍 project_structure.py
+│   └── 📄 structure.txt
+├── 🧪 tests/
+│   ├── 📁 examples/
+│   │   ├── 🐍 __init__.py
+│   │   ├── 🐍 example.py
+│   │   ├── 🐍 example_calculator.py
+│   │   ├── 🐍 example_full_flow.py
+│   │   └── 📄 start_test.txt
+│   ├── 🧪 tests/
+│   │   ├── 📄 application_test.txt
+│   │   ├── 🐍 test_all_methods.py
+│   │   ├── 🐍 test_calculator.py
+│   │   ├── 🐍 test_synchronizer.py
+│   │   └── 🐍 test_validator.py
+│   ├── 🐍 __init__.py
+│   ├── 🐍 order_simulator.py
+│   ├── 🐍 test_all_accounts.py
+│   └── 🐍 test_error_handler.py
+├── 📁 tmp/
+│   ├── 📄 .gitkeep
+│   └── 📄 Notes_from_claude.txt
+├── 🔑 tokens/
+│   ├── 📄 .gitkeep
+│   ├── 📋 main_tokens.json
+│   └── 📋 slave_1_tokens.json
+├── 📄 .env
+├── 🐍 app_streamlit_multi.py
+├── 📝 README.md
+└── 📄 requirements.txt
+
+==================================================
+📊 Статистика:
+   Папок:       21
+   Файлов:      82
+   .py файлов:  53
+   .json файлов: 9
+   Строк Python: 10,543

@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.local
+
+# Tokens and credentials
+tokens/*.json
+tokens/*_tokens.json
+!tokens/.gitkeep
+
+# Config files (but keep structure)
+config/*.json
+!config/.gitkeep
+
+# Data files (but keep structure)
+data/**/*.json
+data/*.json
+!data/.gitkeep
+!data/clients/.gitkeep
+
+# Logs
+logs/
+!logs/.gitkeep
+*.log
+*.log.*
+*.log.zip
+
+# Temporary files
+tmp/*.*
+!tmp/.gitkeep
+temp/
+*.tmp
+*.temp
+
+# Recycle bin
+Recycle/
+!Recycle/.gitkeep
+
+# Backups
+*.bak
+*.backup
+
+# ======================
+# Системный мусор OS
+# ======================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride

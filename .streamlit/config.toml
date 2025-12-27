@@ -1,0 +1,24 @@
+
+# config.toml
+# .streamlit.config.toml
+
+#[server]
+#headless = false
+
+#[browser]
+#gatherUsageStats = false
+
+[theme]
+# Разрешить пользователю выбирать тему
+# Не указываем base - Streamlit покажет опцию выбора в меню
+
+## **📋 Как использовать:**
+
+#1. Нажмите **☰** (меню в правом верхнем углу)
+#2. Выберите **Settings**
+#3. В разделе **Choose app theme** выберите:
+#   - **Light**
+#   - **Dark**
+#   - **Use system setting**
+#
+#-
