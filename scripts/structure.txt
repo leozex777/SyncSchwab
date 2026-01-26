@@ -1,0 +1,146 @@
+📂 SyncSchwab/
+==================================================
+├── 📁 .streamlit/
+│   └── 📋 config.toml
+├── 📁 app/
+│   ├── ⚛️ core/
+│   │   ├── 🐍 cache_manager.py
+│   │   ├── 🐍 config.py
+│   │   ├── 🐍 config_cache.py
+│   │   ├── 🐍 delta_tracker.py
+│   │   ├── 🐍 error_handler.py
+│   │   ├── 🐍 json_utils.py
+│   │   ├── 🐍 logger.py
+│   │   ├── 🐍 market_calendar.py
+│   │   ├── 🐍 notification_service.py
+│   │   ├── 🐍 paths.py
+│   │   ├── 🐍 power_manager.py
+│   │   ├── 🐍 scheduler.py
+│   │   ├── 🐍 sync_common.py
+│   │   ├── 🐍 sync_service.py
+│   │   ├── 🐍 telegram_service.py
+│   │   ├── 🐍 token_checker.py
+│   │   └── 🐍 worker_client.py
+│   ├── 🖥️ gui/
+│   │   ├── 🧩 components/
+│   │   │   ├── 🐍 __init__.py
+│   │   │   ├── 🐍 client_details.py
+│   │   │   ├── 🐍 client_management.py
+│   │   │   ├── 🐍 dashboard.py
+│   │   │   ├── 🐍 log_viewer.py
+│   │   │   ├── 🐍 main_account.py
+│   │   │   ├── 🐍 modals.py
+│   │   │   ├── 🐍 notifications.py
+│   │   │   ├── 🐍 oauth_wizard.py
+│   │   │   ├── 🐍 sidebar.py
+│   │   │   └── 🐍 synchronization.py
+│   │   ├── 🔧 utils/
+│   │   │   ├── 🐍 __init__.py
+│   │   │   ├── 🐍 env_manager.py
+│   │   │   ├── 🐍 refresh_manager.py
+│   │   │   ├── 🐍 session_state.py
+│   │   │   ├── 🐍 styles.py
+│   │   │   └── 🐍 styles_directory.py
+│   │   ├── 🐍 __init__.py
+│   │   └── 🐍 main.py
+│   ├── 🧠 models/
+│   │   ├── 📁 clients/
+│   │   │   └── 🐍 client_manager.py
+│   │   └── 📁 copier/
+│   │       ├── 🐍 calculator.py
+│   │       ├── 🐍 entities.py
+│   │       ├── 🐍 multi_sync.py
+│   │       ├── 🐍 synchronizer.py
+│   │       └── 🐍 validator.py
+│   ├── 📁 modes/
+│   │   ├── 📁 live/
+│   │   │   ├── 🐍 __init__.py
+│   │   │   ├── 🐍 orders.py
+│   │   │   └── 🐍 sync.py
+│   │   ├── 📁 monitor_live/
+│   │   │   ├── 🐍 __init__.py
+│   │   │   └── 🐍 sync.py
+│   │   ├── 📁 monitor_simulation/
+│   │   │   ├── 🐍 __init__.py
+│   │   │   └── 🐍 sync.py
+│   │   ├── 📁 simulation/
+│   │   │   ├── 🐍 __init__.py
+│   │   │   └── 🐍 sync.py
+│   │   ├── 🐍 __init__.py
+│   │   └── 🐍 base.py
+│   └── 🔧 utils/
+│       ├── 🐍 __init__.py
+│       └── 🐍 schwab_auth.py
+├── ⚙️ config/
+│   ├── 📄 .bg_cache_pid
+│   ├── 📄 .gitkeep
+│   ├── 📋 clients.json
+│   ├── 📋 general_settings.json
+│   ├── 📋 gui_status.json
+│   ├── 📋 market_calendar.json
+│   ├── 📋 sync_settings.json
+│   ├── 📋 telegram_notifications.json
+│   ├── 📋 ui_state.json
+│   └── 📋 worker_status.json
+├── 💾 data/
+│   ├── 📁 clients/
+│   │   ├── 📄 .gitkeep
+│   │   ├── 📋 slave_1_history.json
+│   │   ├── 📋 slave_1_history_delta.json
+│   │   └── 📋 slave_1_history_dry.json
+│   ├── 📄 .gitkeep
+│   ├── 📋 account_cache.json
+│   ├── 📋 account_cache_dry.json
+│   └── 📋 notifications_queue.json
+├── 📜 logs/
+│   ├── 📄 .gitkeep
+│   ├── 📦 app_schwab.2026-01-03_02-37-47_740638.log.zip
+│   ├── 📜 app_schwab.log
+│   ├── 📦 errors.2026-01-03_02-37-47_740638.log.zip
+│   ├── 📜 errors.log
+│   ├── 📦 orders.2026-01-03_02-37-47_740638.log.zip
+│   ├── 📜 orders.log
+│   ├── 📦 sync.2026-01-03_02-37-47_740638.log.zip
+│   └── 📜 sync.log
+├── 📁 Recycle/
+│   └── 📄 .gitkeep
+├── 📜 scripts/
+│   ├── 🐍 cancel_pending_orders.py
+│   ├── 🐍 check_orders.py
+│   ├── 🐍 check_positions.py
+│   ├── ⚙️ cleanup.bat
+│   ├── 🐍 count_lines.py
+│   ├── 🐍 measure_api_delay.py
+│   ├── 🐍 place_test_order.py
+│   ├── 🐍 project_structure.py
+│   ├── 📄 structure.txt
+│   └── 🐍 test_all_accounts.py
+├── 🧪 tests/
+│   ├── 🐍 __init__.py
+│   ├── 🐍 order_simulator.py
+│   └── 🐍 test_error_handler.py
+├── 📁 tmp/
+│   ├── 📄 .gitkeep
+│   ├── 📄 Notes_from_claude.txt
+│   └── 📄 новые файлы.txt
+├── 🔑 tokens/
+│   ├── 📄 .gitkeep
+│   ├── 📋 main_tokens.json
+│   └── 📋 slave_1_tokens.json
+├── 📄 .env
+├── 🐍 app_streamlit_multi.py
+├── 📄 gitattributes
+├── 📝 README.md
+├── ⚙️ start_all.bat
+├── ⚙️ start_gui.bat
+├── ⚙️ start_worker.bat
+├── 📄 streamlit_output.txt
+└── 🐍 sync_worker.py
+
+==================================================
+📊 Статистика:
+   Папок:       24
+   Файлов:      112
+   .py файлов:  68
+   .json файлов: 16
+   Строк Python: 19,591
